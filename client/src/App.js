@@ -107,6 +107,7 @@ import AboutUsPage from 'pages/AboutUs.js'
 
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom'
 import MyContactUs from './pages/MyContactUs'
+import GoogleLoginButton from './components/GoogleLoginButton/GoogleLoginButton'
 
 export default function App() {
   // return <AnimationRevealPage disabled></AnimationRevealPage>;
@@ -137,6 +138,9 @@ export default function App() {
         <Route path="/signup">
           <SignupPage />
         </Route>
+        <Route path="/googlelogin">
+          <GoogleLoginButton />
+        </Route> 
       </Switch>
     </Router>
   )
